@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4009AF;
+    transition: 0.5s;
+}
+
+.navbar-wrapper{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo{
+    position: relative;
+    max-width: 80px;
+}
+
+.navbar__menu{
+    position: relative;
+    display: flex;
+}
+
+.navbar__menu li{
+    list-style: none;
+}
+
+.navbar__menu li a{
+    display: inline-block;
+    color: white;
+    font-weight: 400;
+    margin-left: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .main__text{
+    position: relative;
+    max-width: 600px;
+}
+
+.main .main__text h2{
+    color: white;
+    font-size: 64px;
+    line-height: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 50px;
+}
+
+.main .main__text h2 span{
+    font-size: 120px;
+    position: relative;
+    top: 50px;
+    text-transform: uppercase;
+}
+
+.main .main__text p{
+    color: white;
+}
+
+.main .main__text a{
+    display: inline-block;
+    background: white;
+    position: relative;
+    top: 20px;
+    padding: 8px 20px;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-decoration: uppercase;
+}
+
+.main .main__box{
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+
+.main .main__box img{
+    max-width: 260px;
+}
+
+.main__thumb{
+    position: absolute;
+    display: flex;
+    Left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+.main__thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5;
+}
+
+.main__thumb li:hover{
+    transform:translateY(-5px);
+}
+
+.main__thumb li img{
+    max-width: 120px;
+}
+
+.main__redes{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__redes li{
+    list-style: none;
+}
+
+.main__redes li a{
+    display: inline-block;
+    filter: invert(1);
+    margin: 5px 0;
+    transform:scale(0.6);
+}
+
+@media screen and (max-width: 768px) {
+    .main{
+        width: 100%;
+    }
+    .main__text p{
+        display: none;
+    }
+    .main__box .main__text{
+        display:inline-block;
+    }
+    .main .main__text h2 {
+        display: none;
+    }
+    .main .main__text h2 span{
+        display: none
+    }
+    .main .main__text a{
+        position: relative;
+        top: 120px;
+        left: 125px;
+        font-size: 15px;
+        font-style: inline;
+        width: 220px;
+    }
+    .main__box img{
+        align-items: center;
+        width: 60%;
+        height: 60%;
+        position: relative;
+        bottom: 70px;
+        right: 130px;
+    }
+    .main__text .main__box{
+        width: 49%;
+        margin-right: 2%;
+    }
+}
+
+/*    __________
+    /''T''|[___|___]
+    [---T--L -OlllllllO-]
+    ()_)"""()_)/"**"\)_)
+*/
